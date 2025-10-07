@@ -1,50 +1,53 @@
-````md
-# CLIMAFIX Frontend (Vite + React)
+## CLIMAFIX Frontend (Vite + React)
 
-Summit-first homepage for **CLIMAFIX** with a modern, responsive UI built on React and Tailwind CSS.  
-Focuses on promoting the **CLIMAFIX Summit** with live links and fast rendering in production.
+Summit-first homepage for **CLIMAFIX** with a modern, responsive UI built on React and Tailwind CSS. Focuses on promoting the **CLIMAFIX Summit** with live links and fast rendering in production.
 
 ---
 
-## 🌟 Highlights
-- Summit-focused hero with auto-rotating background images  
-- Countdown timer (accessible, dynamic target date) or **LIVE** badge during event  
-- Past Summits dropdown with animated mindmap path and links (2022–2025)  
-- Summit Highlights cards (2023, 2024, 2025)  
-- Featured Speakers marquee (auto-scrolling)  
-- Past Events Gallery with linked images  
-- Mobile-friendly navbar with hamburger menu  
-- Production optimizations: preconnect/preload, lazy image loading, reduced-motion  
+### 🌟 Highlights
+- Summit-focused hero with auto-rotating background images
+- Countdown timer (accessible, dynamic target date) or **LIVE** badge during event
+- Past Summits dropdown with animated mindmap path and links (2022–2025)
+- Summit Highlights cards (2023, 2024, 2025)
+- Featured Speakers marquee (auto-scrolling)
+- Past Events Gallery with linked images
+- Mobile-friendly navbar with hamburger menu
+- Production optimizations: preconnect/preload, lazy image loading, reduced motion
 
 ---
 
-## ⚙️ Tech Stack
-- **React 19 + Vite**  
-- **React Router DOM** (routing shell)  
+### ⚙️ Tech Stack
+- **React 19 + Vite**
+- **React Router DOM** (routing shell)
 - **Tailwind CSS**
 
 ---
 
-## 🚀 Getting Started
+### 🚀 Getting Started
 
 ```bash
 npm install
 npm run dev       # start dev server
 npm run build     # production build
 npm run preview   # preview production build
-````
+```
 
 No backend or env variables are required for the homepage.
 
 ---
 
-## 📂 Project Structure
+### 📂 Project Structure
 
-```
-client/
-├── index.html               # HTML template (preconnect + preload)
+```text
+.
+├── index.html
+├── public/
+│   └── bg_img.png
 ├── src/
-│   ├── assets/              # Images, icons (e.g., arrow_icon.svg)
+│   ├── assets/
+│   │   ├── arrow_icon.svg
+│   │   ├── assets.js
+│   │   └── bg_img.png
 │   ├── components/
 │   │   ├── Navbar.jsx
 │   │   ├── Hero.jsx
@@ -58,47 +61,34 @@ client/
 │   │   ├── CallToAction.jsx
 │   │   └── SiteFooter.jsx
 │   ├── pages/
-│   │   └── Home.jsx         # Composes the sections above
-│   ├── index.css            # Tailwind + global styles (overflow fix, marquee)
-│   ├── App.jsx              # App routes
-│   └── main.jsx             # Entry point
-└── vite.config.js
+│   │   └── Home.jsx
+│   ├── index.css
+│   ├── App.jsx
+│   └── main.jsx
+├── eslint.config.js
+├── postcss.config.js
+├── tailwind.config.js
+├── vite.config.js
+├── package.json
+└── package-lock.json
 ```
 
 ---
 
-## 🔗 Content & Links
+### 🔗 Content & Links
 
 Uses live **CLIMAFIX** assets and pages for accuracy:
 
-* 2025 → [climafix.in/summit/2025](https://climafix.in/summit/2025/)
-* 2024 → [climafix.in/summit/2024](https://climafix.in/summit/2024/)
-* 2023 → [climafix.in/summit/2023](https://climafix.in/summit/2023/)
-* Gallery → [climafix.in/summit/2022/gallery](https://climafix.in/summit/2022/gallery)
+- 2025 → [climafix.in/summit/2025](https://climafix.in/summit/2025/)
+- 2024 → [climafix.in/summit/2024](https://climafix.in/summit/2024/)
+- 2023 → [climafix.in/summit/2023](https://climafix.in/summit/2023/)
+- Gallery → [climafix.in/summit/2022/gallery](https://climafix.in/summit/2022/gallery)
 
 ---
 
-## ♿ Accessibility & Performance
+### ♿ Accessibility & Performance
 
-* `aria-live` timer, `role="timer"`, accessible buttons
-* `prefers-reduced-motion` fallback for marquee
-* Lazy/async image decoding, preconnect to asset hosts
-* Pauses hero rotation when tab is hidden
-
----
-
-```
-
----
-
-### ✅ Fix Summary:
-1. Added blank lines between headings and sections.  
-2. Used emojis for section icons (optional but clean).  
-3. Fixed Markdown indentation inside code blocks.  
-4. Added horizontal dividers (`---`) to improve readability.  
-5. Ensured code fences don’t break layout.
-
-If you now **replace your README.md** with this and push to GitHub, it’ll render perfectly.  
-
-Would you like me to make it even more **visual** (e.g., with banner, badges, and screenshots) to make it look professional for internship review?
-```
+- `aria-live` timer, `role="timer"`, accessible buttons
+- `prefers-reduced-motion` fallback for marquee
+- Lazy/async image decoding, preconnect to asset hosts
+- Pauses hero rotation when tab is hidden
