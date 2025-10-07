@@ -31,9 +31,6 @@ npm run dev       # start dev server
 npm run build     # production build
 npm run preview   # preview production build
 ```
-
-No backend or env variables are required for the homepage.
-
 ---
 
 ### 📂 Project Structure
